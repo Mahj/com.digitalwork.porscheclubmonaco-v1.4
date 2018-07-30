@@ -1,0 +1,46 @@
+<ion-header no-border>
+  <ion-navbar transparent color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu" color="light"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content fullscreen="true" no-padding >
+
+    <div class="profile-box">
+        <div class="profile-box-background"></div>
+        <div text-center>
+            <img [src]="profilePicture" class="edit-avatar pop-in" alt="">
+            <p class="name-text">{{(profile | async)?.name}}</p>
+        </div>
+    </div>
+
+    <ion-card padding>
+        <ion-list >
+            <ion-item>
+                <!--<ion-icon name="ios-mail" item-left></ion-icon>-->
+                <h2>E-mail</h2>
+                <p>{{email}}</p>
+            </ion-item>
+
+            <ion-item>
+              <!--<ion-icon name="ios-bowtie" item-left></ion-icon>-->
+              <h2>Name</h2>
+              <p>{{name}}</p>
+            </ion-item>
+
+            <ion-item>
+              <!--<ion-icon name="ios-call" item-left></ion-icon>-->
+              <h2>Mobile phone</h2>
+              <p>{{phone}}</p>
+            </ion-item>
+
+        </ion-list>
+
+        <button ion-button block color="deeporange" (click)="logout()">
+          Logout
+        </button>
+    </ion-card>
+
+</ion-content>

@@ -1,0 +1,33 @@
+<!--
+  Generated template for the RatePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="{{ !!headerColor? headerColor: 'brown'}}">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Rate App</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-card>
+        <ion-card-header>
+            Enjoing the {{ !!appName? appName: 'ionAppFull4Pro'}} app?
+        </ion-card-header>
+        <ion-card-content>
+            
+            <p>&nbsp;</p>
+            <!--***********  Rate the app  ***********-->
+            <button (click)="provideFeedback()" ion-button icon-start color="gray">Not impressed</button>
+            <button (click)="rateTheApp()" ion-button icon-end color="gray">It is great</button>
+        </ion-card-content>
+    </ion-card>
+   
+</ion-content>

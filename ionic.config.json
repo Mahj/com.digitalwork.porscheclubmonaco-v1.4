@@ -1,0 +1,7 @@
+{
+  "name": "ionAppFull4Pro",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

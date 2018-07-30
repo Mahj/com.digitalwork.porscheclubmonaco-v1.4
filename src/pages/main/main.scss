@@ -1,0 +1,28 @@
+page-main {
+    .menu-header {
+        padding: 5px 15px;
+        background-image: url('../assets/md-bg3.jpg');
+        background-size: cover;
+        background-color: color($colors, blue2);
+        color: white;
+
+        .name {
+            font-weight: 400;
+            font-size: 18px;
+            margin-top: 10px;
+            margin-bottom: 3px;
+        }
+
+        .email {
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+        .user-avatar {
+            padding: .5em;
+            height: 12vh;
+            margin-top: 15px;
+            // border: 3px solid #fff;
+        }
+    }
+}
